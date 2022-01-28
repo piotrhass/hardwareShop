@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="styles/cart.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/products.css" />
+
+    <script src="scripts/hardwareShop.js"></script>
+    <script src="scripts/shopApi.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function (event) {
+        setProductList();
+      });
+    </script>
+
+    <title>Smart Hardware Shop</title>
+  </head>
+
+  <body>
+    <div class="titleBar">
+      <h2>Smart Hardware Shop</h2>
+    </div>
+    <div class="bodyContainer">
+      <div class="productsContainer">
+        <div class="newProducts">
+          <input class="field" id="nameField" placeholder="Name" />
+          <input class="field" id="descriptionField" placeholder="Description"/>
+          <input class="field" id="defaultImageField" placeholder="Image URL" />
+          <input class="field" id="priceField" placeholder="Price" />
+          <input class="field" id="discountField" placeholder="Discount" />
+          <input class="field" id="idField" placeholder="ID only for update" />
+          <button class="btn addBtn" onclick="postProduct()">
+            <span>Add</span>
+          </button>
+          <button class="btn updateBtn" onclick="updateProduct()">
+            <span>Update</span>
+          </button>
+        </div>
+        <div class="search">
+          <input class="field" id="searchField" placeholder="Search for products..."/>
+          <button class="btn searchBtn" onclick="searchProduct()">
+            <span>Search</span>
+          </button>
+        </div>
+        <div id="productsList"></div>
+      </div>
+      <div class="cart">
+        <div id="cartProducts"></div>
+        <div id="totalPrice">
+          <h3>Total:</h3>
+          <h3 id="total">0</h3>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

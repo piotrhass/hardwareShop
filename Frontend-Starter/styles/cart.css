@@ -1,0 +1,27 @@
+.cartItem {
+  background-color: lightgray;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+#cartProducts {
+  padding: 20px;
+  width: auto;
+  height: 90%;
+  overflow: scroll;
+}
+
+#totalPrice {
+  display: flex;
+}
+
+.cart {
+  padding: 20px;
+  border-style: solid;
+  border-radius: 15px;
+  margin-right: 0;
+  margin-left: auto;
+  width: 30%;
+  height: auto;
+}

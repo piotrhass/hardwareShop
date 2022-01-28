@@ -1,0 +1,46 @@
+.productsContainer {
+  display: inline-block;
+  padding: 20px;
+  display: inline-block;
+  border-style: solid;
+  border-radius: 25px;
+  width: 65%;
+  height: auto;
+  align-items: left;
+}
+
+.productBlock {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 25px;
+  background-color: lightgray;
+}
+
+.product {
+  width: 200px;
+  height: 300px;
+  display: inline-block;
+  text-align: center;
+}
+
+#productsList {
+  display: inline-block;
+  padding: 20px;
+  width: auto;
+  height: 70%;
+  overflow: scroll;
+}
+
+.newProducts {
+  display: inline-block;
+  margin-bottom: 10px;
+  height: 5%;
+  width: auto;
+  padding: 20px;
+}
+
+.productBlock img {
+  width: 100px;
+  height: 100px;
+}
